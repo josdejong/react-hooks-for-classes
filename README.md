@@ -73,7 +73,7 @@ export class IntervalHook extends ReactClassHook<IntervalHookProps> {
 }
 ```
 
-The hook can be instantiated as a regular class. A regular React class is instantiated by passing `props` to the constructor. Unlike that, a `ReactClassHook` expects a callback function `getProps()`, dynamically providing the hook's properties.
+A regular React class component is instantiated by passing `props` to the constructor. Unlike that, a `ReactClassHook` expects a callback function `getProps()` as argument for the constructor. This allows updating the hook's properties before every update.
 
 ```ts
 const myIntervalHook = new IntervalHook(() => ({
