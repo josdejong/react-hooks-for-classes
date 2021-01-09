@@ -2,7 +2,7 @@
 
 Class based hooks for React
 
-`react-hooks-for-classes` applies the concept of React functional hooks to classic React component classes. The great thing about Reacts hooks is that it allows you to separate your view logic from business logic and side effects. Before hooks, a common separation was _container components_ (for the view) and _presentational components_ (for the logic). In this approach, container components are part of the view. Hooks give a much cleaner separation since they are really separated from the view, whilst still tapping into the life cycle events of your application.
+`react-hooks-for-classes` applies the concept of React functional hooks to classic React component classes. The great thing about Reacts hooks is that it allows you to separate your view logic from business logic and side effects. Before hooks, a common separation was _container components_ (for the view) and _presentational components_ (for the logic). In this approach, container components are part of the view. Hooks give a much cleaner separation since they are not part of the view, whilst they can tap into the life cycle events of your application.
 
 A downside of React hooks is that they _look_ like regular, pure functions, but they are the opposite of that: they are intended to keep state and handle side effects. Hooks do not have explicit life cycle events, making it hard to understand when your hook will be executed and with what state. Hooks are bound to special rules and limitations, such as not being able to dynamically create hooks on the fly. They can be hard to deal with due to tricky pitfalls like stale closures, which can be hard to understand and debug.
 
