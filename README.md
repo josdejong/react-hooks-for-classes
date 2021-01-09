@@ -39,7 +39,7 @@ import { ReactClassHook, mountHook, unmountHook } from 'react-hooks-for-classes'
 
 See the folder `/demo` in the github project for an extensive example.
 
-Create a `ReactClassHook` with the life cycle hooks that you need: `hookDidMount`, `hookDidUpdate`, `hookWillUnmount`. The class has a property `this.props`, which is refreshed at any update using a `getProps` callback passed via the class constructor. You can create your own state in the class, like `this.timer` in the following example.
+Create a `ReactClassHook` with the life cycle hooks you need: `hookDidMount`, `hookDidUpdate`, `hookWillUnmount`. The class has a property `this.props`, which is refreshed at any update. You can create your own state in the class, like `this.timer` in the following example.
 
 ```ts
 import { ReactClassHook } from 'react-hooks-for-classes' 
